@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>MNJ Foodies</title>
+   <meta property="og:url"          content="http://www.your-domain.com/your-page.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <!-- <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" /> -->
+   <link rel="stylesheet" href="./public/css/app.css">
+</head>
+<body>
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+         fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+            attribution=setup_tool
+            page_id="113678720052160"
+            theme_color="#ffc300">
+      </div>
+
+
+
+      <!-- <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+
+   <div id="sidebar">
+      <div class="nav">
+         <div class="burger" onclick="toggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+         </div>
+         <!-- <h1>Mary's Foodies</h1> -->
+      </div>
+      <div class="menus">
+         <a href="#" class="menu">Muffins</a >
+         <a href="#"  class="menu">Bibingka</a >
+         <a href="#"  class="menu">Puto</a >
+      </div>
+   </div>
+   <div id="section-1">
+      <img src="./public/image/home_banner.jpg" alt="">
+   </div>
+
+   
+   <script src="./public/js/app.js"></script>
+   
+</body>
+</html>
